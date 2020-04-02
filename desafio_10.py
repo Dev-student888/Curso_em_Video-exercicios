@@ -1,0 +1,8 @@
+print('=' * 20, 'DESAFIO 10', '=' * 20)
+r = float(input('Quanto dinheiro você tem na carteira? R$ '))
+print('Com R${:.2f} você pode comprar US${:.2f} '.format(r, r / 4.39))
+print('Com R${:.2f} você pode comprar EU€{:.2f} '.format(r, r / 4.76))
+print('Com R${:.2f} você pode comprar £{:.2f} '.format(r, r / 5.69))
+print('Com R${:.2f} você pode comprar JP¥{:.2f} '.format(r, r / 0.0394))
+print('Com R${:.2f} você pode comprar CNY元/¥{:.2f} '.format(r, r / 0.625))
+print('=' * 52)

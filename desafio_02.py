@@ -1,0 +1,5 @@
+print('====== DESAFIO 02 ======\n')
+d = input('Dia: ')
+m = input('Mês: ')
+a = input('Ano: ')
+print('Você nasceu no dia {} de {} de {}. Correto? '.format(d, m, a))

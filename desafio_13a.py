@@ -1,0 +1,5 @@
+print('=' * 26, 'DESAFIO 13', '=' * 26)
+salario = float(input('Qual é o salário de um Funcionário? R$'))
+print('O antigo salário deste funcionário era de R${:.2f},'.format(salario))
+print('agora com 15% de aumento, o funcionário receberá R${:.2f}'.format(salario + salario*15/100))
+print('=' * 64)

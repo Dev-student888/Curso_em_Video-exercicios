@@ -1,0 +1,8 @@
+v = float(input('Digite um valor: '))
+print('O valor digitado foi {:.2f} m '.format(v))
+print('Este valor em kilômetros é {:.3f} km '.format(v/1000))
+print('Em hectômetros é {:.2f} hm '.format(v/100))
+print('Em decâmetros é {:.1f} dam '.format(v/10))
+print('Em decímetros é {} dm '.format(v*10))
+print('Em centímetros é {} cm '.format(v*100))
+print('Em milímetros é {} mm '.format(v*1000))

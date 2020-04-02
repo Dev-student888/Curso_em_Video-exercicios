@@ -1,0 +1,8 @@
+print('=' * 40, 'DESAFIO 11', '=' * 40)
+l: float = float(input('Largura da parede: '))
+a: float = float(input('Altura da parede: '))
+print('Largura da parede: {:.2f} m\nAltura da parede: {:.2f} m'.format(l, a))
+print('Área da parede: {:.2f} m²'.format(l * a))
+print('Esta parede necessita de {:.2f} litros de tinta para ser'.format((l * a) / 2), end=' ')
+print('completamente pintada! ')
+print('=' * 92)
