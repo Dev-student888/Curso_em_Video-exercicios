@@ -3,14 +3,6 @@
 
 
 sexo = str(input('Digite o seu sexo [M/F]: ')).strip()
-while sexo:
-    if sexo == 'M' or sexo == 'F':
-        print('Informação armazenada com sucesso!')
-        exit()
-    else:
-        print('Opção Inválida!')
-        r = str(input('Gostaria de tentar novamente? [S/N] '))
-        if r in 'Ss':
-            sexo = str(input('Digite seu sexo [M/F]: ')).strip()
-        else:
-            exit()
+while sexo not in 'MasculinomasculinoFemininofeminino':
+    sexo = str(input('Dados inválidos!\nPor favor informe seu sexo [M/F]: ')).strip()
+print('Sexo {} registrado com sucesso!'.format(sexo.upper()))
