@@ -4,32 +4,22 @@
 
 from random import randint
 from playsound import playsound as play
-from time import sleep
 
-print('Vamos jogar um jogo!\nAcabei de pensar em um número entre 0 e 10.\n')
 c = randint(0, 10)
-u = int(input('Em qual número pensei? '))
-while u:
-    if u != c:
-        print('\nAnalisando resposta ...')
-        sleep(3)
-        print('Errou!\n', end='')
-        play('./faustao-errou.mp3')
-        print('Você: {}'.format(u))
-        print('Computador: {}'.format(c))
-        r = str(input('Gostaria de tentar novamente? [S/N] '))
-        if r in 'Ss':
-            u = int(input('Em qual número pensei? '))
-        elif r in 'Nn':
-            exit()
-        else:
-            print('Opção Inválida! Por favor reinicie o programa!\n')
-            exit()
-    else:
-        print('\nAnalisando resposta ...')
-        sleep(3)
-        print('PARABÉNS! VOCÊ ACERTOU!\n', end='')
+print('Olá! Sou seu computador!')
+print('Vamos jogar um jogo?\nAcabei de pensar em um número entre 0 e 10.\n')
+acertou = False
+palpites = 0
+while not acertou:
+    u = int(input('Em qual número pensei? '))
+    if u == c:
+        acertou = True
         play('./acertou_miseravi.mp3')
-        print('Você: {}'.format(u))
-        print('Computador: {}'.format(c))
-        exit()
+    else:
+        play('./faustao-errou.mp3')
+        if u < c:
+            print('Mais... Tente novamente!\n')
+        else:
+            print('Menos... Tente novamente!\n')
+        palpites += 1
+print('Você precisou de {} tentativas até acertar!\n'.format(palpites))
