@@ -10,8 +10,8 @@
 # a operação realizada em cada caso.
 
 from time import sleep
-v = int(input('Digite um valor: '))
-n = int(input('Digite outro valor: '))
+n1 = int(input('Digite um valor: '))
+n2 = int(input('Digite outro valor: '))
 o = 0
 while o != 5:
     print('''OPÇÕES:
@@ -23,17 +23,17 @@ while o != 5:
     ''')
     o = int(input(': '))
     if o == 1:
-        s = v + n
-        print('A soma entre {} e {} é {}\n'.format(v, n, s))
+        s = n1 + n2
+        print('A soma entre {} e {} é {}\n'.format(n1, n2, s))
     elif o == 2:
-        m = v * n
-        print('A multiplicação entre {} e {} é {}\n'.format(v, n, m))
+        m = n1 * n2
+        print('A multiplicação entre {} e {} é {}\n'.format(n1, n2, m))
     elif o == 3:
-        maior = max(v, n)
-        print('O maior número entre {} e {} é {}\n'.format(v, n, maior))
+        maior = max(n1, n2)
+        print('O maior número entre {} e {} é {}\n'.format(n1, n2, maior))
     elif o == 4:
-        v = int(input('\nDigite um valor: '))
-        n = int(input('Digite outro valor: '))
+        n1 = int(input('\nDigite um valor: '))
+        n2 = int(input('Digite outro valor: '))
     elif o == 5:
         print('Finalizando ...')
         sleep(2)

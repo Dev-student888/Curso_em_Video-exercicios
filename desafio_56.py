@@ -13,8 +13,8 @@ idade = 0
 sexo = ''
 c = 0
 i = 0
-hv = 0
-nv = ''
+iv = 0
+v = ''
 ml = 0
 for i in range(1, 5):
     print('PESSOA {}:\n'.format(i))
@@ -23,15 +23,15 @@ for i in range(1, 5):
     sexo = str(input('Sexo [M/F]: ')).strip()
     print('*' * 39, end='\n')
     c += idade
-    if sexo in 'Mm' and idade > hv:
-        hv = idade
-        nv = nome
+    if sexo in 'Mm' and idade > iv:
+        iv = idade
+        v = nome
     if sexo in 'Ff' and idade < 20:
         ml += 1
 c = c / i
 print('A média de idade deste grupo é de {}'.format(c))
-print('O homem mais velho tem {} anos e se chama {}'.format(hv, nv))
+print('O homem mais velho tem {} anos e se chama {}'.format(iv, v))
 if ml == 1:
-    print('Neste grupo há 1 mulher com menos de 20 anos!'.format(ml))
+    print('Neste grupo há {} mulher com menos de 20 anos!'.format(ml))
 elif ml > 1 or ml == 0:
     print('Neste grupo há {} mulheres com menos de 20 anos!'.format(ml))

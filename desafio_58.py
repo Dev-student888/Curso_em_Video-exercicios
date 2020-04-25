@@ -22,4 +22,7 @@ while not acertou:
         else:
             print('Menos... Tente novamente!\n')
         palpites += 1
-print('Você precisou de {} tentativa(s) até acertar!\n'.format(palpites))
+if palpites == 1:
+    print('Você precisou de apenas 1 tentativa para acertar!\n')
+else:
+    print('Você precisou de {} tentativa(s) até acertar!\n'.format(palpites))
