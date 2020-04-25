@@ -3,6 +3,6 @@
 
 
 sexo = str(input('Digite o seu sexo [M/F]: ')).strip()
-while sexo not in 'MasculinomasculinoFemininofeminino':
+while sexo not in 'MF':
     sexo = str(input('Dados inválidos!\nPor favor informe seu sexo [M/F]: ')).strip()
-print('Sexo {} registrado com sucesso!'.format(sexo.upper()))
+print('Sexo {} registrado com sucesso!'.format(sexo))
