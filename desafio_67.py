@@ -7,7 +7,6 @@ while True:
     print('-' * 30)
     if t < 0:
         break
-    c = 1
     for c in range(1, 11):
         print(f'{t} x {c:2d} = {t*c:2d}')
     print('-'*30)
