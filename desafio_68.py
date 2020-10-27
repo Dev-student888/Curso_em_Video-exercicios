@@ -9,6 +9,12 @@ print('=-'*15)
 c = 0
 while True:
     n = int(input('Digite um valor: '))
+    while n < 0:
+        print('ERRO! Por favor digite um número que seja maior ou igual a 0.')
+        n = int(input('Digite um valor: '))
+    while n > 10:
+        print('ERRO! Por favor digite um número que seja menor ou igual a 10.')
+        n = int(input('Digite um valor: '))
     r = str(input('Par ou Ímpar? [P/I] ')).upper()
     comp = randint(0, 10)
     s = n + comp
