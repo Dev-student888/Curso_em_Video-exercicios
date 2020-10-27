@@ -36,7 +36,7 @@ while True:
             print('Você PERDEU!')
             break
 
-    if r not in 'PI':
+    else:
         print('Dado incorreto! Por favor digite novamente sua resposta!\n')
 
 print('=-'*15)

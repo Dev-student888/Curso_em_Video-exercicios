@@ -8,9 +8,7 @@ while True:
         break
     c = 1
     print('-'*30)
-    while c <= 10:
-        r = t * c
-        print(f'{t} x {c:2d} = {r:2d}')
-        c += 1
+    for c in range(1, 11):
+        print(f'{t} x {c:2d} = {t*c:2d}')
     print('-'*30)
 print('PROGRAMA TABUADA ENCERRADO. Volte sempre!')

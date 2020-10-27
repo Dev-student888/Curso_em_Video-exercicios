@@ -25,13 +25,13 @@ while True:
     if i < 20 and s == 'F':
         Mmenos20 += 1
     r = str(input('Quer continuar? [S/N] ')).upper()
-    if r in 'SN':
-        if r == 'S':
-            continue
-        else:
-            break
-    else:
+    while r not in 'SN':
         print('Dado incorreto! Por favor digite novamente sua resposta!\n')
+        r = str(input('Quer continuar? [S/N] ')).upper()
+    if r == 'S':
+        continue
+    else:
+        break
 print('='*6, end='')
 print(' FIM DO PROGRAMA ', end='')
 print('='*6)
