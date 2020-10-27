@@ -12,7 +12,7 @@ while True:
     while n > 10 or n < 0:
         print('ERRO! Por favor digite um número que seja menor ou igual a 10 ou um número maior ou igual a 0.')
         n = int(input('Digite um valor: '))
-    r = str(input('Par ou Ímpar? [P/I] ')).upper()
+    r = str(input('Par ou Ímpar? [P/I] ')).strip().upper()
     comp = randint(0, 10)
     s = n + comp
     if r in 'PI':
@@ -28,7 +28,7 @@ while True:
             print('-'*30)
             print('Você VENCEU!')
             c += 1
-            print('Vamos jogar novamente...')
+            print('Vamos jogar novamente...\n')
         if s % 2 == 1 and r == 'P' or s % 2 == 0 and r == 'I':
             if r == 'P':
                 pi = 'ÍMPAR'
