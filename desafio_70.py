@@ -35,6 +35,7 @@ while True:
         continue
     else:
         break
+print('{:-^40}'.format(' FIM DO PROGRAMA '))
 print(f'O total da compra foi R${tot:.2f}')
 print(f'Temos {pm1000} produtos custando mais de R$1000.00')
 print(f'O produto mais barato foi {np[n_pos]} que custa R${pb:.2f}')
