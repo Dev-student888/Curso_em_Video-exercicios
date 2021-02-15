@@ -17,3 +17,6 @@ while True:
     r = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if r == 'N':
         break
+    elif r not in 'SN':
+        print('Erro! Por favor tente novamente!')
+        r = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
