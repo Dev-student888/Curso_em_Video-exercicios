@@ -4,17 +4,8 @@
 
 from random import randint
 
-x = randint(0, 10)
-
-y = randint(0, 10)
-
-z = randint(0, 10)
-
-c = randint(0, 10)
-
-s = randint(0, 10)
-
-t = (x, y, z, c, s)
+t = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10),
+     randint(0, 10))
 
 print(f'Os valores sorteados foram: {t}')
 print(f'O maior valor sorteado foi {max(t)}')
