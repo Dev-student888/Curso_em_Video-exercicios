@@ -5,9 +5,10 @@
 # C) Uma lista com os times em ordem alfabética
 # D) Em que posição na tabela está o time do Chapecoense
 
-tcb = ('Flamego', 'Santos', 'Palmeiras', 'Grêmio', 'Athletico-PR', 'São Paulo',
-       'Internacional', 'Corinthians', 'Fortaleza', 'Goiás', 'Bahia',
-       'Vasco da Gama', 'Atlético-MG', 'Fluminense', 'Botafogo', 'Ceará SC',
+tcb = ('Flamego', 'Santos', 'Palmeiras', 'Grêmio',
+       'Athletico-PR', 'São Paulo', 'Internacional', 'Corinthians',
+       'Fortaleza', 'Goiás', 'Bahia', 'Vasco da Gama',
+       'Atlético-MG', 'Fluminense', 'Botafogo', 'Ceará SC',
        'Cruzeiro', 'CSA', 'Chapecoense', 'Avaí')
 
 cp = 'Chapecoense'
