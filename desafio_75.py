@@ -25,7 +25,7 @@ for valor in t:
     if valor % 2 == 0:
         ap = vp.append(valor)
 
-if vp is NotImplemented:
+if vp:
     print('Os valores pares digitados foram ', end='')
 
     for num in vp:
