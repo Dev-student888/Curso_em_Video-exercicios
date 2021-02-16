@@ -4,15 +4,11 @@
 # B) Em que posição foi digitado o valor 3.
 # C) Quais foram os números pares.
 
-a = int(input('Digite um valor: '))
+t = (int(input('Digite um valor: ')),
+     int(input('Digite outro valor: ')),
+     int(input('Digite mais um valor: ')),
+     int(input('Digite o último valor: ')))
 
-b = int(input('Digite outro valor: '))
-
-c = int(input('Digite mais um valor: '))
-
-d = int(input('Digite o último valor: '))
-
-t = (a, b, c, d)
 print(f'Você digitou os valores {t}')
 
 print(f'O valor 9 apareceu {t.count(9)} vezes')
@@ -29,7 +25,10 @@ for valor in t:
     if valor % 2 == 0:
         ap = vp.append(valor)
 
-print('Os valores pares digitados foram ', end='')
+if vp is NotImplemented:
+    print('Os valores pares digitados foram ', end='')
 
-for num in vp:
-    print(f'{num}', end=' ')
+    for num in vp:
+        print(f'{num}', end=' ')
+else:
+    print('Não forão digitados nenhum valor par!')
