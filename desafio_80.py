@@ -3,7 +3,6 @@
 # (sem usar o sort()). No final, mostre a lista ordenada na tela.
 
 l = []
-mj = mn = 0
 
 for i in range(5):
     v = int(input('Digite um número: '))
