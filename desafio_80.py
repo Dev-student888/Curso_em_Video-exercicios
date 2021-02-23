@@ -5,16 +5,19 @@
 l = []
 mj = mn = 0
 
-for i in range(0, 5):
-    l.append(int(input('Digite um número: ')))
-    if i == 0:
-        mj = mn = l[i]
+for i in range(5):
+    v = int(input('Digite um número: '))
+    if i == 0 or v > l[-1]:
+        l.append(v)
+        print('Adicionado ao final da lista... ')
     else:
-        if l[i] < mn:
-            mn = l[i]
-            l[i-1] = mn
-        if l[i] > mj:
-            mj = l[i]
-            l[i+1] = mj
+        pos = 0
+        while pos <= len(l):
+            if v <= l[pos]:
+                l.insert(pos, v)
+                print(f'Adicionado na posição {pos} da lista... ')
+                break
+            pos += 1
 
-print(f'Lista: {l}')
+print('=-'*30)
+print(f'Os valores digitados em ordem foram {l}')
