@@ -10,10 +10,10 @@ impar = list()
 r = 'S'
 while r == 'S':
     l.append(int(input('Digite um número: ')))
-    r = str(input('Quer continuar? [S/N] ')).upper().strip()
+    r = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
 if r not in 'SN':
     print('Erro! Por favor tente novamente!')
-    r = str(input('Quer continuar? [S/N] ')).upper().strip()
+    r = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
 
 print('=-'*30)
 
