@@ -26,4 +26,4 @@ for E in matriz:
 print('-=' * 30)
 print(f'A Soma de todos os valores pares digitados é {s}')
 print(f'A Soma dos valores da terceira coluna é {s3}')
-print(f'O maior valor da segunda linha é {mai}')
+print(f'O Maior valor da segunda linha é {mai}')
