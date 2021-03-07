@@ -4,6 +4,7 @@
 # em uma lista composta.
 
 from random import randint
+from time import sleep
 l = list()
 e = 0
 print('-' * 30)
@@ -14,5 +15,7 @@ j = int(input('Quantos jogos você quer que eu sorteie? '))
 for i in range(0, j):
     l.append([randint(1, 60), randint(1, 60), randint(1, 60), randint(1, 60), randint(1, 60), randint(1, 60)])
 
+print('-=' * 6, f' SORTEANDO {j} JOGOS ', '-=' * 6)
 for i in range(1, j + 1):
     print(f'Resultado do {i}º jogo: {l[i - 1]}')
+    sleep(1)
