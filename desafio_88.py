@@ -5,12 +5,14 @@
 
 from random import randint
 l = list()
+e = 0
+print('-' * 30)
+print(f'{"JOGO NA MEGA SENA":^30}')
+print('-' * 30)
 
-j = int(input('Quantos jogos você quer gerar? '))
+j = int(input('Quantos jogos você quer que eu sorteie? '))
 for i in range(0, j):
-    l.append([])
+    l.append([randint(1, 60), randint(1, 60), randint(1, 60), randint(1, 60), randint(1, 60), randint(1, 60)])
 
 for i in range(1, j + 1):
-    print(f'Resultado do {i}º jogo: ')
-
-print(l)
+    print(f'Resultado do {i}º jogo: {l[i - 1]}')
