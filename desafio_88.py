@@ -7,7 +7,7 @@ from random import randint
 l = list()
 
 j = int(input('Quantos jogos você quer gerar? '))
-for u in range(0, j):
+for i in range(0, j):
     l.append([])
 
 for i in range(1, j + 1):
