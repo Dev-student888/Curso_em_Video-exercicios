@@ -7,10 +7,12 @@ boletim['nome'] = str(input('Nome: ')).strip()
 boletim['media'] = float(input(f'Média de {boletim["nome"]}: '))
 if boletim['media'] >= 7:
     boletim['situacao'] = 'Aprovado'
+elif 5 < boletim['media'] < 7:
+    boletim['situacao'] = 'Recuperação'
 else:
     boletim['situacao'] = 'Reprovado'
 
 print('-=' * 30)
-print(f'Nome é igual a {boletim["nome"]}')
-print(f'Média é igual a {boletim["media"]}')
-print(f'Situação é igual a {boletim["situacao"]}')
+print(f'\t- Nome é igual a {boletim["nome"]}')
+print(f'\t- Média é igual a {boletim["media"]}')
+print(f'\t- Situação é igual a {boletim["situacao"]}')
