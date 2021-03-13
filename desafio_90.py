@@ -10,6 +10,7 @@ if boletim['media'] >= 7:
 else:
     boletim['situacao'] = 'Reprovado'
 
+print('-=' * 30)
 print(f'Nome é igual a {boletim["nome"]}')
 print(f'Média é igual a {boletim["media"]}')
 print(f'Situação é igual a {boletim["situacao"]}')
