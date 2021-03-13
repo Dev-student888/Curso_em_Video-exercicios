@@ -7,7 +7,7 @@ boletim['nome'] = str(input('Nome: ')).strip()
 boletim['media'] = float(input(f'Média de {boletim["nome"]}: '))
 if boletim['media'] >= 7:
     boletim['situacao'] = 'Aprovado'
-elif 5 < boletim['media'] < 7:
+elif 5 <= boletim['media'] < 7:
     boletim['situacao'] = 'Recuperação'
 else:
     boletim['situacao'] = 'Reprovado'
