@@ -13,7 +13,7 @@ jogadores = {'jogador1': randint(1, 6),
              }
 print('Valores sortados:')
 for k, v in jogadores.items():
-    print(f'O {k} tirou {v}')
+    print(f'O {k} tirou {v} no dado.')
     sleep(1)
 print('-=' * 30)
 print('   == RANKING DOS JOGADORES ==')
