@@ -13,8 +13,9 @@ jogadores = {'jogador1': randint(1, 6),
              }
 print('Valores sortados:')
 for k, v in jogadores.items():
-    print(f'\tO {k} tirou {v}')
+    print(f'O {k} tirou {v}')
     sleep(1)
-print('Ranking dos jogadores:')
+print('-=' * 30)
+print('   == RANKING DOS JOGADORES ==')
 for i in range(1, 5):
-    print(f'\t{i}º jogador:  com ')
+    print(f'\t{i}º jogador: ')
