@@ -24,7 +24,7 @@ while pessoa_fisica['ctps'] < 0:
 else:
     pessoa_fisica['contratação'] = int(input('Ano de Contratação: '))
     pessoa_fisica['salário'] = float(input('Salário: R$'))
-    pessoa_fisica['aposentadoria'] = pessoa_fisica['idade'] + 35
+    pessoa_fisica['aposentadoria'] = pessoa_fisica['idade'] + ((pessoa_fisica['contratação'] + 35) - n_y)
     print('-=' * 30)
     for k, v in pessoa_fisica.items():
         print(f'  - {k} tem o valor {v}')
