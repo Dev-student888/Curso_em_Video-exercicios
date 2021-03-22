@@ -26,3 +26,18 @@ print('-' * 51)
 for i in range(len(times)):
     print(f'  {i} {times[i]["nome"]} {str(times[i]["gols em cada partida"])} {str(times[i]["total de gols"])}')
 print('-' * 51)
+while True:
+    d = int(input('Mostrar dados de qual jogador? (999 para parar) '))
+    while d != 999:
+        if 0 <= d <= len(times) - 1:
+            print(f' -- LEVANTAMENTO DO JOGADOR {times[d]["nome"]}:')
+            for i, v in enumerate(times[d]['gols em cada partida']):
+                print(f'\tNo {i + 1}º jogo fez {v} gols.')
+            break
+        else:
+            print(f'ERRO! Não existe jogador com código {d}.')
+            break
+    if d == 999:
+        break
+    print('-' * 51)
+print('<< VOLTE SEMPRE >>')
