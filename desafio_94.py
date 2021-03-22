@@ -12,8 +12,8 @@ ficha = list()
 idade = media = 0
 while True:
     pessoa['nome'] = str(input('Nome: ')).strip()
-    pessoa['idade'] = int(input('Idade: '))
     pessoa['sexo'] = str(input('Sexo: [M/F] ')).strip()[0]
+    pessoa['idade'] = int(input('Idade: '))
     while pessoa['sexo'] not in 'MmFf':
         print('Erro! Por favor tente novamente!')
         print('Por favor digite apenas \'M\' ou \'F\'!')
