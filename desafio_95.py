@@ -7,9 +7,9 @@ jogador = dict()
 
 while True:
     jogador['nome'] = str(input('Nome de jogador: ')).strip()
-    jogador['partidas'] = int(input(f'Quantas partidas {jogador["nome"]} jogou? '))
+    partidas = int(input(f'Quantas partidas {jogador["nome"]} jogou? '))
     jogador['gols em cada partida'] = list()
-    for i in range(jogador['partidas']):
+    for i in range(partidas):
         jogador['gols em cada partida'].append(int(input(f'\tQuantos gols na {i + 1}ª partida? ')))
     jogador['total de gols'] = sum(jogador['gols em cada partida'])
     r = str(input('Quer continuar? [S/N] ')).strip()[0]
@@ -23,8 +23,11 @@ while True:
 print('-=' * 30)
 print('cod nome\t\t\t\tgols\t\t\t\ttotal')
 print('-' * 51)
-for i in range(len(times)):
-    print(f'  {i} {times[i]["nome"]} {str(times[i]["gols em cada partida"])} {str(times[i]["total de gols"])}')
+for k, v in enumerate(times):
+    print(f'{k:>3} ', end='')
+    for d in v.values():
+        print(f'{str(d):<20}', end='')
+    print()
 print('-' * 51)
 while True:
     d = int(input('Mostrar dados de qual jogador? (999 para parar) '))
