@@ -21,9 +21,9 @@ def contador(início, fim, passo):
         fim += 1
     print('-=' * 30)
     if início > fim and passo < 0:
-        print(f'Contagem de {início} até {fim + 1} de {passo * -1} em {passo * -1}', flush=True)
+        print(f'Contagem de {início} até {fim + 1} de {passo * -1} em {passo * -1}')
     elif fim > início:
-        print(f'Contagem de {início} até {fim - 1} de {passo} em {passo}', flush=True)
+        print(f'Contagem de {início} até {fim - 1} de {passo} em {passo}')
     for i in range(início, fim, passo):
         print(i, end=' ')
         sleep(0.5)
