@@ -14,7 +14,7 @@ def maior(* x):
     if len(x) > 0:
         print(f'O maior valor informado foi {max(x)}.')
     else:
-        print('O maior valor informado foi 0.')
+        print(f'O maior valor informado foi {len(x)}.')
 
 
 maior(2, 9, 4, 5, 7, 1)
