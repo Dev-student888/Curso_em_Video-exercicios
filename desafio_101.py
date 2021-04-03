@@ -11,11 +11,11 @@ def voto():
     print('-' * 30)
     n = int(input('Em que ano você nasceu? '))
     idade = a - n
-    if idade >= 18:
+    if 65 > idade >= 18:
         print(f'Com {idade} anos: VOTO OBRIGATÓRIO.')
-    elif idade >= 16 or idade > 65:
+    elif 18 > idade >= 16 or idade >= 65:
         print(f'Com {idade} anos: VOTO OPCIONAL.')
-    elif idade < 16:
+    elif 0 > idade < 16:
         print(f'Com {idade} anos: NÃO VOTA.')
 
 
