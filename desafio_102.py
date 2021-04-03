@@ -27,3 +27,5 @@ def fatorial(n, show=False):
 
 print(fatorial(5))
 print(fatorial(5, True))
+print()
+help(fatorial)
