@@ -7,7 +7,7 @@
 def ficha(nome, gols=0):
     if not nome:
         nome = '<desconhecido>'
-    print(f'O jogador {nome} fez {gols} gol(s) no campeonato.')
+    print(f'O jogador {nome} fez {gols} gol(s) no campeonato')
 
 
 print('-' * 30)

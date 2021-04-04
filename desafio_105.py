@@ -31,9 +31,10 @@ def notas(*n, sit=False):
             d['situação'] = 'RAZOÁVEL'
         elif 6 >= d['média'] < 7 or d['média'] > 7:
             d['situação'] = 'BOA'
+
     return d
 
 
 # Programa Principal
-resp = notas(3.5, 2, 6.5)
+resp = notas(5, 10, 5, sit=True)
 print(resp)
