@@ -22,8 +22,9 @@ def notas(*n, sit=False):
         'total': len(n),
         'maior': max(n),
         'menor': min(n),
-        'média': f'{sum(n) / len(n):.3f}'
+        'média': sum(n) / len(n)
     }
+    d['média'] = float(f'{d["média"]:.3f}')
     if sit is True:
         if d['média'] < 5:
             d['situação'] = 'RUIM'
