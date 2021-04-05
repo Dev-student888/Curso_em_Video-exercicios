@@ -6,10 +6,10 @@
 
 def ajuda():
     while True:
-        print("\033[0;30;44m" + "~~" + "~" * 23 + "~~" + "\033[m")
-        print("\033[0;30;44m  SISTEMA DE AJUDA PyHELP  \033[m")
-        print("\033[0;30;44m" + "~~" + "~" * 23 + "~~" + "\033[m")
-        valor = str(input("Função ou Biblioteca >"))
+        print("\033[0;34;40m" + "~~" + "~" * 23 + "~~" + "\033[m")
+        print("\033[0;34;40m  SISTEMA DE AJUDA PyHELP  \033[m")
+        print("\033[0;34;40m" + "~~" + "~" * 23 + "~~" + "\033[m")
+        valor = str(input("Função ou Biblioteca > "))
         if valor in 'FIMfim':
             print("\033[0;31;40m" + "~" * 4 + "~" * 9 + "\033[m")
             print("\033[0;31;40m  ATÉ LOGO!  \033[m")
@@ -19,7 +19,9 @@ def ajuda():
             print("\033[0;30;42m" + "~" * 36 + "~" * len(valor) + "\033[m")
             print(f"\033[0;30;42m  Acessando o manual do comando \'{valor}\'  \033[m")
             print("\033[0;30;42m" + "~" * 36 + "~" * len(valor) + "\033[m")
+            print("\033[0;30;44m", end="")
             help(valor)
+            print("\033[m", end="")
 
 
 ajuda()
