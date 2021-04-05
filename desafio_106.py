@@ -5,10 +5,12 @@
 # OBS.: use cores.
 
 def ajuda():
+    from time import sleep
     while True:
         print("\033[0;34;40m" + "~~" + "~" * 23 + "~~" + "\033[m")
         print("\033[0;34;40m  SISTEMA DE AJUDA PyHELP  \033[m")
         print("\033[0;34;40m" + "~~" + "~" * 23 + "~~" + "\033[m")
+        sleep(1)
         valor = str(input("Função ou Biblioteca > "))
         if valor in 'FIMfim':
             print("\033[0;31;40m" + "~" * 4 + "~" * 9 + "\033[m")
@@ -22,6 +24,7 @@ def ajuda():
             print("\033[0;30;44m", end="")
             help(valor)
             print("\033[m", end="")
+            sleep(2)
 
 
 ajuda()
