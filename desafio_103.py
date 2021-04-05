@@ -4,7 +4,7 @@
 # mostrar a ficha do jogador, mesmo que algum dado não tenha
 # sido informado corretamente.
 
-def ficha(nome, gols=0):
+def ficha(nome, gols):
     if not nome:
         nome = '<desconhecido>'
     print(f'O jogador {nome} fez {gols} gol(s) no campeonato')
@@ -12,7 +12,8 @@ def ficha(nome, gols=0):
 
 print('-' * 30)
 n = str(input('Nome do Jogador: ')).strip()
-g = int(input('Número de Gols: '))
-if not g:
+try:
+    g = int(input('Número de Gols: '))
+except ValueError:
     g = 0
 ficha(n, g)
