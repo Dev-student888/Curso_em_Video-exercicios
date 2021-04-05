@@ -13,4 +13,6 @@ def ficha(nome, gols=0):
 print('-' * 30)
 n = str(input('Nome do Jogador: ')).strip()
 g = int(input('Número de Gols: '))
+if not g:
+    g = 0
 ficha(n, g)
