@@ -7,9 +7,9 @@
 def ajuda():
     from time import sleep
     while True:
-        print("\033[0;34;40m" + "~~" + "~" * 23 + "~~" + "\033[m")
+        print("\033[0;34;40m" + "~" * 27 + "\033[m")
         print("\033[0;34;40m  SISTEMA DE AJUDA PyHELP  \033[m")
-        print("\033[0;34;40m" + "~~" + "~" * 23 + "~~" + "\033[m")
+        print("\033[0;34;40m" + "~" * 27 + "\033[m")
         sleep(1)
         valor = str(input("Função ou Biblioteca > "))
         if valor in 'FIMfim':
