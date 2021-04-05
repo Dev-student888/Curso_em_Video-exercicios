@@ -4,6 +4,7 @@
 # um valor numérico.
 # Ex:
 # n = leiaInt('Digite um n')
+
 def leiaInt(x):
     if x.isdecimal() is True:
         return x
