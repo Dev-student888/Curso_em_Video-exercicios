@@ -17,6 +17,7 @@ def notas(*n, sit=False):
     :param sit: valor opcional, indicando se deve ou não adicionar a situação.
     :return: dicionário com várias informações sobre a situação da turma.
     """
+    print()
     print('-' * 30)
     d = {
         'total': len(n),
@@ -37,6 +38,6 @@ def notas(*n, sit=False):
 
 
 # Programa Principal
-resp = notas(5, 5, 5, sit=True)
+resp = notas(5, 10, 5, sit=True)
 print(resp)
 help(notas)
