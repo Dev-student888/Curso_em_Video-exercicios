@@ -27,15 +27,15 @@ def notas(*n, sit=False):
     if sit is True:
         if d['média'] < 5:
             d['situação'] = 'RUIM'
-        elif d['média'] < 6:
+        elif 5 <= d['média'] < 6:
             d['situação'] = 'RAZOÁVEL'
-        elif d['média'] > 6:
+        elif d['média'] >= 6:
             d['situação'] = 'BOA'
 
     return d
 
 
 # Programa Principal
-resp = notas(5, 3, 5, sit=True)
+resp = notas(5, 5, 5, sit=True)
 print(resp)
 help(notas)
