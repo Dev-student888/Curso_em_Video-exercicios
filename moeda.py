@@ -16,3 +16,7 @@ def dobro(x):
 
 def metade(x):
     return x / 2
+
+
+def moeda(x):
+    return f'R${x:.2f}'
