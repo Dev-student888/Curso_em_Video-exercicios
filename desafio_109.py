@@ -3,7 +3,7 @@
 # retornado por elas vai ser ou não formatado pela função moeda(),
 # desenvolvida no desafio 108.
 
-from moeda_109 import metade, dobro, aumentar, diminuir, moeda
+from moeda import metade, dobro, aumentar, diminuir, moeda
 
 p = float(input('Digite o preço: '))
 print(f'A metade de {moeda(p)} é {metade(p, True)}')

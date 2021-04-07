@@ -1,21 +1,33 @@
-# Faz parte dos Exercícios 107 e 108!
+# Este arquivo faz parte do Exercício 109!
 
-def aumentar(x, perc):
-    y = x + x * perc/100
-    return y
-
-
-def diminuir(x, perc):
-    y = x - x * perc/100
-    return y
+def aumentar(x, perc, m=False):
+    y = x + x * perc / 100
+    if m is False:
+        return y
+    else:
+        return moeda(y)
 
 
-def dobro(x):
-    return x * 2
+def diminuir(x, perc, m=False):
+    y = x - x * perc / 100
+    if m is False:
+        return y
+    else:
+        return moeda(y)
 
 
-def metade(x):
-    return x / 2
+def dobro(x, m=False):
+    if m is False:
+        return x * 2
+    else:
+        return moeda(x * 2)
+
+
+def metade(x, m=False):
+    if m is False:
+        return x / 2
+    else:
+        return moeda(x / 2)
 
 
 def moeda(x):
