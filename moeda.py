@@ -1,4 +1,4 @@
-# Faz parte dos Exercícios 107, 108 e 109!
+# Faz parte dos Exercícios 107 e 108!
 
 def aumentar(x, perc):
     y = x + x * perc/100
