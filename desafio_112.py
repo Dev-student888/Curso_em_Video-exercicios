@@ -3,7 +3,7 @@
 # que seja capaz de funcionar como a função input(), mas com uma
 # validação de dados para aceitar apenas valores que sejam monetários.
 
-from utilidadesCeV import dado
+from utilidadesCeV import dado, moeda
 
 p = dado.leiaDinheiro('Digite o preço: R$')
-dado.m.resumo(p, 35, 22)
+moeda.resumo(p, 35, 22)
