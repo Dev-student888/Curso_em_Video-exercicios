@@ -17,17 +17,19 @@ def diminuir(x, perc, m=False):
 
 
 def dobro(x, m=False):
+    y = x * 2
     if m is False:
-        return x * 2
+        return y
     else:
-        return moeda(x * 2)
+        return moeda(y)
 
 
 def metade(x, m=False):
+    y = x / 2
     if m is False:
-        return x / 2
+        return y
     else:
-        return moeda(x / 2)
+        return moeda(y)
 
 
 def moeda(x):

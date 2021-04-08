@@ -5,4 +5,5 @@
 
 from utilidadesCeV import dado
 
-p = dado.leiaDinheiro('Digite o preço: ')
+p = dado.leiaDinheiro('Digite o preço: R$')
+dado.m.resumo(p, 35, 22)
