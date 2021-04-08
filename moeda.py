@@ -36,7 +36,7 @@ def moeda(x):
     return f'R${x:.2f}'.replace('.', ',')  # Preste atenção no método REPLACE
 
 
-def resumo(x, aum, red):
+def resumo(x, aum=10, red=5):
     print('-' * 30)
     print('RESUMO DO VALOR'.center(30))
     print('-' * 30)
