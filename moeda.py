@@ -37,12 +37,12 @@ def moeda(x):
 
 
 def resumo(x, aum, red):
-    print('-' * 32)
-    print('        RESUMO DO VALOR')
-    print('-' * 32)
-    print(f'Preço analisado:    {moeda(x)}')
-    print(f'Dobro do preço:     {dobro(x, True)}')
-    print(f'Metade do preço:    {metade(x, True)}')
-    print(f'{aum}% de aumento:     {aumentar(x, aum, True)}')
-    print(f'{red}% de redução:     {diminuir(x, red, True)}')
-    print('-' * 32)
+    print('-' * 30)
+    print('RESUMO DO VALOR'.center(30))
+    print('-' * 30)
+    print(f'Preço analisado: \t{moeda(x)}')
+    print(f'Dobro do preço: \t{dobro(x, True)}')
+    print(f'Metade do preço: \t{metade(x, True)}')
+    print(f'{aum}% de aumento: \t{aumentar(x, aum, True)}')
+    print(f'{red}% de redução: \t{diminuir(x, red, True)}')
+    print('-' * 30)
