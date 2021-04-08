@@ -31,7 +31,7 @@ def metade(x, m=False):
 
 
 def moeda(x):
-    return f'R${x:.2f}'
+    return f'R${x:.2f}'.replace('.', ',')  # Preste atenção no método REPLACE
 
 
 def resumo(x, aum, red):
