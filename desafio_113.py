@@ -37,4 +37,4 @@ def leiaFloat(msg):
 
 nm = leiaInt('Digite um número Inteiro: ')
 fl = leiaFloat('Digite um número Real: ')
-print(f'O valor inteiro digitado foi {nm} e o real foi {fl}'.replace('.', ','))
+print(f'O valor inteiro digitado foi {nm} e o real foi {fl}')
