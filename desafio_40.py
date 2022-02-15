@@ -26,7 +26,7 @@ if m < 5.0:
     print('{} estudante está REPROVAD{}.'.format(s2, s2))
 elif 5.0 <= m < 6.9:
     print('Com as notas {} e {} a média dest{} estudante é de {} pontos.'.format(n1, n2, s1, m))
-    print('O(A) estudante está de RECUPERAÇÃO.')
+    print('{} estudante está de RECUPERAÇÃO.'.format(s2))
 elif m >= 7.0:
     print('Com as notas {} e {} a média dest{} estudante é de {} pontos.'.format(n1, n2, s1, m))
     print('{} estudante está APROVAD{}.'.format(s2, s2))
