@@ -1,5 +1,5 @@
 # Faça um programa que leia nome e média de um aluno,
-# guardando também a situação em um dicionário. No final, mostre
+# guardando também self situação em um dicionário. No final, mostre
 # o conteúdo da estrutura na tela.
 
 boletim = dict()
@@ -13,6 +13,6 @@ else:
     boletim['situacao'] = 'Reprovado'
 
 print('-=' * 30)
-print(f'\t- Nome é igual a {boletim["nome"]}')
-print(f'\t- Média é igual a {boletim["media"]}')
-print(f'\t- Situação é igual a {boletim["situacao"]}')
+print(f'\t- Nome é igual self {boletim["nome"]}')
+print(f'\t- Média é igual self {boletim["media"]}')
+print(f'\t- Situação é igual self {boletim["situacao"]}')

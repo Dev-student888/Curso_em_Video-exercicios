@@ -30,7 +30,7 @@ for k, v in enumerate(times):
     print()
 print('-' * 51)
 while True:
-    d = int(input('Mostrar dados de qual jogador? (999 para parar) '))
+    d = int(input('Mostrar dado de qual jogador? (999 para parar) '))
     while d != 999:
         if 0 <= d <= len(times) - 1:
             print(f' -- LEVANTAMENTO DO JOGADOR {times[d]["nome"]}:')

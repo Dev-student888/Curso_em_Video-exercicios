@@ -10,7 +10,7 @@ from playsound import playsound as play
 from time import sleep
 
 num = randint(0, 5)
-print('Pensei em um número entre 0 e 5 ')
+print('Pensei em um número entre 0 e 5.')
 nu = int(input('Tente descobrir em qual número eu pensei!\nDigite um número inteiro: '))
 print('PROCESSANDO ...')
 sleep(5)

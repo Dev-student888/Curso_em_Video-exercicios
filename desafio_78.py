@@ -5,7 +5,7 @@
 l = list()
 
 for i in range(5):
-    l.append(int(input(f'Digite um valor para a Posição {i}: ')))
+    l.append(int(input(f'Digite um valor para self Posição {i}: ')))
 print('=-' * 30)
 print(f'Você digitou os valores {l}')
 print(f'O maior valor digitado foi {max(l)} nas posições ', end='')
